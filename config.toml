@@ -1,0 +1,67 @@
+baseURL = "https://pulsar-summit.org/"
+languageCode = "en"
+title = "Pulsar Summit"
+
+# Theme
+theme = "pulsar-summit"
+
+# Params
+
+enableEmoji = true
+enableRobotsTXT = true
+enableMissingTranslationPlaceholders = true
+
+googleAnalytics = "UA-150699026-3"
+
+[params]
+    title = "Pulsar Summit San Francisco 2020"
+    date = "April, 2020"
+    description = "Pulsar Summit is the conference dedicated to Apache Pulsar, and the messaging and event streaming community. The conference gathers an international audience of CTOs/CIOs, developers, data architects, data scientists, Apache Pulsar committers/contributors, and the messaging and streaming community, to share experiences, exchange ideas and knowledge, and receive hands-on training sessions led by Pulsar experts."
+    images = ["/images/social-share.png"]
+    email = "organizers@pulsar-summit.org"
+    keywords = "event, pubsub, streaming, messaging, pulsar, event-streaming, apache-bookkeeper, stream-processing"
+    copyright = "We :heart:️ Apache Pulsar"
+    cfpUrl = "/call-for-presentations"
+    subscriptionUrl = "http://eepurl.com/dps1j5"
+    appleTouchIcon = "/apple-touch-icon.png"
+    favicon32 = "/favicon-32x32.png"
+    favicon16 = "/favicon-16x16.png"
+    manifest = "/manifest.json"
+    safariPinnedTab = "/safari-pinned-tab.svg"
+    themeColor = "#1976D2"
+    googleWebmasterKey = ""
+
+[params.logos]
+    jumbo = "/images/logos/pulsar-summit-logo-white.png"
+    header = "/images/logos/pulsar-summit-logo-white.png"
+    footer = "/images/logos/organized-by-logo.png"
+
+[languages]
+[languages.en]
+    weight = 1
+    languageName = "gb"
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    anonymizeIP = false
+    disable = false
+    respectDoNotTrack = false
+    useSessionStorage = false
+  [privacy.instagram]
+    disable = true
+    simple = false
+  [privacy.twitter]
+    disable = false
+    enableDNT = false
+    simple = false
+  [privacy.vimeo]
+    disable = true
+    simple = false
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = false

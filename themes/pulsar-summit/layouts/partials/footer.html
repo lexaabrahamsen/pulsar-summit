@@ -1,0 +1,93 @@
+<footer>
+	<div class="bottom-content">
+
+		<div class="footer-header">
+			<div class="share">
+				<header>{{ i18n "footer_share" }}</header>
+				<ul class="social-list">
+					{{ range .Site.Data.footer.share }}
+					<li>
+						{{ $url := .URL | relLangURL }}
+						{{ partial "social-sharer.html" (dict "context" . "url" $url "name" .name) }}
+						{{ end }}
+				</ul>
+			</div>
+			<div class="blog">
+				<header>
+					{{ i18n "footer_follow_blog" }} <a href="https://streamnative.io/blog">{{ i18n "footer_follow_blog_blog" }}</a>
+				</header>
+			</div>
+			<div class="follow">
+				<header>{{ i18n "footer_follow_us" }}</header>
+				<ul class="social-list">
+					{{ range .Site.Data.footer.follow }}
+					<li>
+						<a href="{{ .url }}" class="social" rel="noreferrer" target="_blank">
+							{{ partial "icon.html" .name }}
+							{{ .name }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+			</div>
+			<div class="email">
+				<a href="mailto:{{ .Site.Params.email }}">
+					{{ partial "icon.html" "email" }}
+					{{- .Site.Params.email -}}
+				</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="footer-content">
+			{{ range .Site.Data.footer.content }}
+			<section>
+				<header>{{ i18n .title }}</header>
+				{{ if .links }}
+				<ul>
+					{{ range .links }}
+					<li>
+						<a href="{{ .url }}" {{ if .newTab }}target="_blank" rel="noopener" {{end}}>
+							{{ if .nameKey }}
+							{{ i18n .nameKey }}
+							{{ else }}
+							{{ .name }}
+							{{ end }}
+						</a>
+					</li>
+					{{ end }}
+				</ul>
+				{{ end }}
+			</section>
+			{{ end }}
+			<section class="subscribe">
+				<header>{{ i18n "newsletter" }}</header>
+				<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+				<script>
+				hbspt.forms.create({
+					portalId: "6585952",
+					formId: "ff9d32c6-267e-4e42-b2a7-43309ce3d18a"
+				});
+				</script>
+			</section>
+		</div>
+
+		<hr>
+
+		<div class="footer-attribution">
+			<p>
+				<a href="https://streamnative.io">
+					<img src="{{ .Site.Params.logos.footer }}" alt="{{ .Site.Title }}">
+				</a>
+			</p>
+		</div>
+		<div class="footer-attribution">
+			<h2>© Copyright 2019 StreamNative. All rights reserved</h2>
+			<p><a href="https://streamnative.io/policy/privacy/">Privacy Policy</a> | <a href="https://streamnative.io/policy/terms/">Terms & Conditions</a></p>
+			<p>Apache Pulsar, Apache, Pulsar, the Pulsar logo, and the Apache feather logo are either registered trademarks or trademarks of The Apache Software Foundation.
+					All other products or name brands are trademarks of their respective holders, including The Apache Software Foundation.
+					The Apache Software Foundation has no affiliation with and does not endorse, or review the materials provided at this event.</p>
+		</div>
+	</div>
+</footer>

@@ -1,0 +1,39 @@
+share:
+  - name: facebook
+    url: https://www.facebook.com/sharer.php?u=
+  - name: twitter
+    url: https://twitter.com/intent/tweet?text=
+
+follow:
+  - name: twitter
+    url: https://twitter.com/PulsarSummit
+
+content:
+  - title: footer_about
+    links:
+      - name: Apache Pulsar
+        url: https://pulsar.apache.org
+        newTab: true
+      - name: Apache BookKeeper
+        url: https://bookkeeper.apache.org
+        newTab: true
+      - name: StreamNative
+        url: https://streamnative.io/
+        newTab: true
+
+  - title: footer_event_resources
+    links:
+      - name: SF 2020 Pre-registration
+        url: /pre-registration/
+        newTab: false
+      - nameKey: footer_coc
+        url: /code-of-conduct/
+        newTab: false
+      - name: FAQs
+        url: /faq
+        newTab: false
+#  - title: footer_become_partners
+#    links:
+#      - nameKey: footer_become_partners_label
+#        url: https://docs.google.com/presentation/d/e/2PACX-1vR9oEvhN0eKW6KeMqJzYZt1AtwiO5eyRhWcy6cXfE63vtZzX8U9B8_r2LpO6WIwDWjOoLkf10G7tFGO/pub?start=false&loop=true&delayms=0&slide=id.g376bab0a27_1_7
+#        newTab: true

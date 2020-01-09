@@ -1,0 +1,11 @@
+{
+  "name": "Pulsar Summit San Francisco 2020",
+  "short_name": "Pulsar Summit SF 2020",
+  "icons": [
+    { "src": "/images/logos/pulsar-summit-logo-square512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "start_url": "./?utm_source=web_app_manifest",
+  "theme_color": "#303F9F",
+  "background_color": "#FFF",
+  "display": "standalone"
+}

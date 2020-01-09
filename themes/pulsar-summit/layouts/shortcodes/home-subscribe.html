@@ -1,0 +1,16 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<section class="subscribe {{ .Get "class" }}">
+	<div class="inner">{{ .Inner }}</div>
+	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+	<script>
+	hbspt.forms.create({
+		portalId: "6585952",
+		formId: "73c1466c-5ee9-411e-8847-d86218438706"
+	});
+	</script>
+	<a href="{{ .Site.Params.subscriptionUrl }}"
+	   class="btn primary" rel="noreferrer" target="_blank">
+		{{ partial "icon.html" "subscribe" }}
+		{{ i18n "subscribe_action" }}
+	</a>
+</section>

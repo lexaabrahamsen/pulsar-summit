@@ -1,5 +1,4 @@
 .home main {
-
   & > section {
     margin: 0;
     padding: 4rem;
@@ -63,9 +62,9 @@
         font-weight: 100;
 
         &::after {
-          content: '';
+          content: "";
           display: block;
-          height: .125rem;
+          height: 0.125rem;
           width: 2rem;
           background-color: var(--primary);
         }
@@ -98,7 +97,7 @@
       }
 
       // Keep only 4 first speakers
-      li:nth-child(n+5) {
+      li:nth-child(n + 5) {
         display: none;
       }
     }
@@ -142,7 +141,7 @@
       }
 
       // Keep only 4 first speakers
-      li:nth-child(n+5) {
+      li:nth-child(n + 5) {
         display: none;
       }
     }
@@ -232,7 +231,7 @@
   }
 }
 
-@supports (grid-template-columns: repeat(auto-fit,minmax(25vmin,1fr))) {
+@supports (grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr))) {
   .home main .info .numbers {
     justify-content: center;
     display: grid;

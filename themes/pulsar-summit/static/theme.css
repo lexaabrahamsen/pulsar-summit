@@ -1343,7 +1343,8 @@ form input {
 
 .partnerlogos {
   column-count: 2;
-  top: 50%; }
+  top: 50%;
+  transform: translate(0, -50%); }
   .partnerlogos h1 {
     font-size: 35px;
     text-align: center;
@@ -1417,6 +1418,7 @@ article {
   background: #b6701e;
   grid-column: 2; }
   .right-half h1 {
+    font-family: "Times New Roman", Times, serif;
     text-align: left;
     font-size: 35px;
     text-align: left;

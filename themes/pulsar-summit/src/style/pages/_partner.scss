@@ -96,6 +96,7 @@
   background-color: #f5f9fc;
 
   h1 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 35px;
     text-align: center;
     color: #13485f;
@@ -118,8 +119,11 @@
 .partnerlogos {
   column-count: 2;
   top: 50%;
+  transform: translate(0, -50%);
 
   h1 {
+    h1 {
+      font-family: "Times New Roman", Times, serif;
     font-size: 35px;
     text-align: center;
     color: #13485f;
@@ -155,12 +159,14 @@
   column-count: 2;
 
   h1 {
-    font-size: 35px;
+    // font-family: "Times New Roman", Times, serif;
+    font-size: 65px;
     text-align: left;
     color: #13485f;
     line-height: 50px;
   }
   h4 {
+
     text-align: left;
     font-weight: 800;
     color: #8298ab;
@@ -186,53 +192,12 @@
   font-size: 30px;
 }
 
-.partners-title {
-  // max-width: 600px;
-}
 
-article {
-  position: relative;
-  top: 50%;
-  // text-align: center;
-  transform: translate(0, -50%);
-  padding: 1rem;
-}
-
-/* Pattern styles */
-.container {
-  display: grid;
-}
-
-.left-half {
-  background: #ff9e2c;
-  grid-column: 3;
-}
-
-.right-half {
-  background: #b6701e;
-  grid-column: 2;
-
-  h1 {
-    text-align: left;
-    font-size: 35px;
-    text-align: left;
-    color: #13485f;
-    line-height: 50px;
-  }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+.subscribe-partners {
+  padding: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

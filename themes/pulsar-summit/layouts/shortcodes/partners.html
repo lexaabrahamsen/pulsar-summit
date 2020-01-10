@@ -1,4 +1,4 @@
-<!-- area under hero image -->
+<!-- AREA UNDER HERO IMAGE -->
 
 <div class="partnersdev">
   <h4>TAGLINE</h4>
@@ -11,33 +11,33 @@
 
 
 
-<!-- logo squares left side  -->
+<!-- LOGO SQUARES LEFT SIDE  -->
 
 <div class="logosquare">
-  <img src="/images/logo1.jpg">
+  <img src="/images/logo1.png">
 </div>
 <div class="logosquare">
-  <img src="/images/logo1.jpg">
+  <img src="/images/logo2.png">
 </div>
 <div class="logosquare">
-  <img src="/images/logo1.jpg">
+  <img src="/images/logo3.png">
 </div>
 <div class="logosquare">
-  <img src="/images/logo1.jpg">
+  <img src="/images/logo4.png">
 </div>
 <!--  -->
 
-<div class="row">
+<!-- <div class="row">
   <div class="column">
-    <img src="/images/logo1.jpg" alt="Snow" style="width:100%">
+    <img src="/images/logo1.png" alt="Snow" style="width:100%">
   </div>
   <div class="column">
-    <img src="/images/logo1.jpg" alt="Forest" style="width:100%">
+    <img src="/images/logo2.png" alt="Forest" style="width:100%">
   </div>
   <div class="column">
-    <img src="/images/logo1.jpg" alt="Mountains" style="width:100%">
+    <img src="/images/logo3.png" alt="Mountains" style="width:100%">
   </div>
-</div>
+</div> -->
 
 
 
@@ -51,47 +51,27 @@
 
 
 
-<section class="container">
-  <div class="left-half">
-    <article>
-      <div class="s">
-        <img src="/images/logo1.jpg">
-      </div>
-      <div class="logosquare">
-        <img src="/images/logo1.jpg">
-      </div>
-      <div class="logosquare">
-        <img src="/images/logo1.jpg">
-      </div>
-    </article>
-  </div>
-  <div class="right-half">
-    <article>
-      <h1>Title Area For The Partner Page</h1>
-      <p>When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.</p>
-    </article>
-  </div>
-</section>
+<!-- SUBSCRIBE -->
+<div class="partnersdev">
+  <h4>TAGLINE</h4>
+  <h1>Get Updates</h1>
 
-
-
-<!-- subscribe -->
-
-<section class="subscribe {{ .Get "class" }}">
-	<div class="inner">{{ .Inner }}</div>
-	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-	<script>
-	hbspt.forms.create({
-		portalId: "6585952",
-		formId: "73c1466c-5ee9-411e-8847-d86218438706"
-	});
-	</script>
-	<a href="{{ .Site.Params.subscriptionUrl }}"
-	   class="btn primary" rel="noreferrer" target="_blank">
-		{{ partial "icon.html" "subscribe" }}
-		{{ i18n "subscribe_action" }}
-	</a>
-</section>
+  <section class="subscribe-partners {{ .Get "class" }}">
+  	<div class="inner">{{ .Inner }}</div>
+  	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+  	<script>
+  	hbspt.forms.create({
+  		portalId: "6585952",
+  		formId: "73c1466c-5ee9-411e-8847-d86218438706"
+  	});
+  	</script>
+  	<a href="{{ .Site.Params.subscriptionUrl }}"
+  	   class="btn primary" rel="noreferrer" target="_blank">
+  		{{ partial "icon.html" "subscribe" }}
+  		{{ i18n "subscribe_action" }}
+  	</a>
+  </section>
+</div>
 <!--  -->
 
 

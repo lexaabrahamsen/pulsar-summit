@@ -1323,7 +1323,7 @@ form input {
         width: 2ch; }
 
 .partnersdev {
-  padding: 80px;
+  padding: 100px;
   background-color: #f5f9fc; }
   .partnersdev h1 {
     font-size: 35px;
@@ -1341,23 +1341,22 @@ form input {
     line-height: 22px;
     text-align: center; }
 
-.partnerlogos h1 {
-  font-size: 35px;
-  text-align: center;
-  color: #13485f;
-  line-height: 50px; }
-
-.partnerlogos h4 {
-  text-align: center;
-  font-weight: 800;
-  color: #8298ab;
-  line-height: 50px;
-  font-size: 13px; }
-
-.partnerlogos p {
-  color: #1f546c;
-  line-height: 22px;
-  text-align: center; }
+.partnerlogos {
+  column-count: 2; }
+  .partnerlogos h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #13485f;
+    line-height: 50px; }
+  .partnerlogos h4 {
+    text-align: center;
+    font-weight: 800;
+    color: #8298ab;
+    line-height: 50px;
+    font-size: 13px; }
+  .partnerlogos p {
+    color: #1f546c;
+    line-height: 62px; }
 
 .logosquare {
   width: 165px;
@@ -1369,6 +1368,36 @@ form input {
   border-radius: 2px;
   overflow: hidden;
   float: left; }
+
+.partner-text {
+  padding-top: 50px;
+  column-count: 2;
+  max-width: 20vw; }
+  .partner-text h1 {
+    font-size: 35px;
+    text-align: left;
+    color: #13485f;
+    line-height: 50px; }
+  .partner-text h4 {
+    text-align: left;
+    font-weight: 800;
+    color: #8298ab;
+    line-height: 50px;
+    font-size: 13px; }
+  .partner-text p {
+    color: #1f546c;
+    line-height: 22px;
+    text-align: left; }
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue; }
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px; }
 
 .section.schedule .hero .description {
   display: flex; }

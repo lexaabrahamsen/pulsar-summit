@@ -117,6 +117,8 @@
 
 .partnerlogos {
   column-count: 2;
+  top: 50%;
+
   h1 {
     font-size: 35px;
     text-align: center;
@@ -151,7 +153,6 @@
 .partner-text {
   padding-top: 50px;
   column-count: 2;
-  max-width: 20vw;
 
   h1 {
     font-size: 35px;
@@ -183,4 +184,55 @@
   margin: 10px;
   padding: 20px;
   font-size: 30px;
+}
+
+.partners-title {
+  // max-width: 600px;
+}
+
+article {
+  position: relative;
+  top: 50%;
+  // text-align: center;
+  transform: translate(0, -50%);
+  padding: 1rem;
+}
+
+/* Pattern styles */
+.container {
+  display: grid;
+}
+
+.left-half {
+  background: #ff9e2c;
+  grid-column: 3;
+}
+
+.right-half {
+  background: #b6701e;
+  grid-column: 2;
+
+  h1 {
+    text-align: left;
+    font-size: 35px;
+    text-align: left;
+    color: #13485f;
+    line-height: 50px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }

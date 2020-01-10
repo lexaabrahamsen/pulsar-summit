@@ -1342,7 +1342,8 @@ form input {
     text-align: center; }
 
 .partnerlogos {
-  column-count: 2; }
+  column-count: 2;
+  top: 50%; }
   .partnerlogos h1 {
     font-size: 35px;
     text-align: center;
@@ -1371,8 +1372,7 @@ form input {
 
 .partner-text {
   padding-top: 50px;
-  column-count: 2;
-  max-width: 20vw; }
+  column-count: 2; }
   .partner-text h1 {
     font-size: 35px;
     text-align: left;
@@ -1398,6 +1398,43 @@ form input {
   margin: 10px;
   padding: 20px;
   font-size: 30px; }
+
+article {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 1rem; }
+
+/* Pattern styles */
+.container {
+  display: grid; }
+
+.left-half {
+  background: #ff9e2c;
+  grid-column: 3; }
+
+.right-half {
+  background: #b6701e;
+  grid-column: 2; }
+  .right-half h1 {
+    text-align: left;
+    font-size: 35px;
+    text-align: left;
+    color: #13485f;
+    line-height: 50px; }
+
+* {
+  box-sizing: border-box; }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 .section.schedule .hero .description {
   display: flex; }

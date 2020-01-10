@@ -1,14 +1,14 @@
-
 <!-- area under hero image -->
 
 <div class="partnersdev">
   <h4>TAGLINE</h4>
   <h1>Title Area For The Partner Page</h1>
-    <p>
+    <p class="partners-title">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
     </p>
 </div>
 <!--  -->
+
 
 
 <!-- logo squares left side  -->
@@ -27,33 +27,55 @@
 </div>
 <!--  -->
 
+<div class="row">
+  <div class="column">
+    <img src="/images/logo1.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/images/logo1.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/images/logo1.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
 
 <div class=partner-text id="wrapper">
   <h4>TAGLINE</h4>
   <h1>Title Area For The Partner Page</h1>
-    <p>
-      When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.
-    </p>
-</div>
-
-<div class="flex-container">
-  <div><img src="/images/logo1.jpg"></div>
-  <div><img src="/images/logo1.jpg"></div>
-  <div><img src="/images/logo1.jpg"></div>
-  <div><img src="/images/logo1.jpg"></div>
+  <p>
+    When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.
+  </p>
 </div>
 
 
 
-
-{{ $site := .Site }}
-{{ range (split (.Get "categories") ",") }}
-<section class="partners-group partner-{{ . }}">
-
-
+<section class="container">
+  <div class="left-half">
+    <article>
+      <div class="s">
+        <img src="/images/logo1.jpg">
+      </div>
+      <div class="logosquare">
+        <img src="/images/logo1.jpg">
+      </div>
+      <div class="logosquare">
+        <img src="/images/logo1.jpg">
+      </div>
+    </article>
+  </div>
+  <div class="right-half">
+    <article>
+      <h1>Title Area For The Partner Page</h1>
+      <p>When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.</p>
+    </article>
+  </div>
 </section>
-{{ end }}
-</section>
+
+
+
+<!-- subscribe -->
 
 <section class="subscribe {{ .Get "class" }}">
 	<div class="inner">{{ .Inner }}</div>
@@ -69,4 +91,18 @@
 		{{ partial "icon.html" "subscribe" }}
 		{{ i18n "subscribe_action" }}
 	</a>
+</section>
+<!--  -->
+
+
+
+
+
+{{ $site := .Site }}
+{{ range (split (.Get "categories") ",") }}
+<section class="partners-group partner-{{ . }}">
+
+
+</section>
+{{ end }}
 </section>

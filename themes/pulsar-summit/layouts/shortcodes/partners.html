@@ -2,24 +2,22 @@
 
 
 <div class="partnersdev">
-  <p>
-    TAGLINE
-  </p>
-
-  <h1>
-    Title Area For The Partner Page
-  </h1>
-
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-  </p>
+  <h4>TAGLINE</h4>
+  <h1>Title Area For The Partner Page</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+    </p>
 </div>
 
-<img src="/images/logos.jpg">
+<div class="logosquare">
+  <img src="/images/logo1.jpg">
+</div>
 
-<!-- <figure>
-  <img src="themes/images/logos.jpg"/>
-</figure> -->
+<div id="wrapper">
+    <div id="first">Stack Overflow is for professional and enthusiast programmers, people who write code because they love it.</div>
+    <div id="second">When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.</div>
+</div>
+
 
 
 <div class="inner">
@@ -32,19 +30,6 @@
 <h3 class="fancy">
 <span>{{ . }}</span>
 </h3>
-
-<!-- <ul>
-	{{ $partners := where $site.AllPages "Params.category" . }}
-{{ range sort $partners ".Params.order" "asc" }}
-<li>{{ partial "partner.html" . }}</li>
-{{ end }}
-</ul> -->
-<div>
-  <h1>Partner Title</h1>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-  </p>
-</div>
 
 </section>
 {{ end }}

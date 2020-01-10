@@ -1323,13 +1323,52 @@ form input {
         width: 2ch; }
 
 .partnersdev {
+  padding: 80px;
   background-color: #f5f9fc; }
   .partnersdev h1 {
-    font-size: 64px;
-    text-align: center; }
-  .partnersdev p {
+    font-size: 35px;
     text-align: center;
-    font-weight: bold; }
+    color: #13485f;
+    line-height: 50px; }
+  .partnersdev h4 {
+    text-align: center;
+    font-weight: 800;
+    color: #8298ab;
+    line-height: 50px;
+    font-size: 13px; }
+  .partnersdev p {
+    color: #1f546c;
+    line-height: 22px;
+    text-align: center; }
+
+.partnerlogos h1 {
+  font-size: 35px;
+  text-align: center;
+  color: #13485f;
+  line-height: 50px; }
+
+.partnerlogos h4 {
+  text-align: center;
+  font-weight: 800;
+  color: #8298ab;
+  line-height: 50px;
+  font-size: 13px; }
+
+.partnerlogos p {
+  color: #1f546c;
+  line-height: 22px;
+  text-align: center; }
+
+.logosquare {
+  width: 165px;
+  height: 210px;
+  margin: 30px;
+  padding: 50px 50px 50px 50px;
+  background: #f5f9fc;
+  box-shadow: 0px 2px 30px 0px rgba(48, 70, 89, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+  float: left; }
 
 .section.schedule .hero .description {
   display: flex; }

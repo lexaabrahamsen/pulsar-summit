@@ -32,7 +32,8 @@
     cursor: pointer;
     color: transparent;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       box-shadow: var(--box-shadow-2);
     }
   }
@@ -43,11 +44,11 @@
   flex-basis: 320px;
 }
 
-.partners-group.partner-gold ul li, .partners-group.partner-startup ul li {
+.partners-group.partner-gold ul li,
+.partners-group.partner-startup ul li {
   height: var(--partner-gold-height);
   flex-basis: 200px;
 }
-
 
 /* Partner fancy name */
 
@@ -61,7 +62,8 @@
     position: relative;
     text-transform: capitalize;
 
-    &:before, &:after {
+    &:before,
+    &:after {
       top: 40%;
       content: "";
       position: absolute;
@@ -82,12 +84,12 @@
   }
 }
 
-
 .partners-group.partner-platinium .fancy {
   font-size: 1.5em;
   color: var(--color-platium);
 
-  span:before, span:after {
+  span:before,
+  span:after {
     border-bottom: 1px solid currentColor;
     border-top: 1px solid currentColor;
   }
@@ -97,9 +99,10 @@
   font-size: 1.33em;
   color: var(--color-gold);
 
-  span:before, span:after {
+  span:before,
+  span:after {
     top: 20%;
+    border-bottom: 1px solid currentColor;
     border-bottom: 1px solid currentColor;
   }
 }
-

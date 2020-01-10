@@ -6,12 +6,10 @@ draft: false
 
 {{% hero %}}
 
-
 {{% /hero %}}
-
 
 <!-- Parteners list -->
 
-{{% partners categories="platinium,gold,startup,soutien,communautes" %}}
+{{% partners categories="partners,sponsors" %}}
 
 {{% /partners %}}

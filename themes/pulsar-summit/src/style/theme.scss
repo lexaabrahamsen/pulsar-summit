@@ -1,6 +1,6 @@
 @import "root";
 @import "variables";
-@import '../../node_modules/sass-mq/mq';
+@import "../../node_modules/sass-mq/mq";
 
 @import "partials/base";
 @import "partials/header";
@@ -13,6 +13,7 @@
 @import "partials/table_of_contents";
 @import "partials/speakers";
 @import "partials/tickets";
+@import "partials/partnersdev";
 @import "partials/partners";
 @import "partials/tags";
 @import "partials/icons";

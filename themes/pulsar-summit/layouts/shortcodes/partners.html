@@ -1,4 +1,10 @@
-{{ $_hugo_config := `{ "version": 1 }` }}
+<!-- new content -->
+
+
+  <!-- {{ $_hugo_config := `{ "version": 1 }` }}
+
+
+ -->
 <section class="partners">
 <div class="inner">
 {{ .Inner }}
@@ -10,12 +16,29 @@
 <h3 class="fancy">
 <span>{{ . }}</span>
 </h3>
-<ul>
+
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/bG5WemQ"><a href="//imgur.com/a/bG5WemQ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+<div>
+  <h1>Partner Title</h1>
+  <p>
+    lorem ipsum dolor set amet
+  </p>
+</div>
+
+<!-- <ul>
 	{{ $partners := where $site.AllPages "Params.category" . }}
 {{ range sort $partners ".Params.order" "asc" }}
 <li>{{ partial "partner.html" . }}</li>
 {{ end }}
-</ul>
+</ul> -->
+
+<section>
+  <p>hello</p>
+</section>
+
 </section>
 {{ end }}
 </section>
+</div>

@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "babel-core": "^6.26.3",
+    "npm-watch": "^0.6.0",
     "react-dom": "^16.12.0"
   }
 }

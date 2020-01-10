@@ -1,11 +1,27 @@
-<!-- new content -->
+<!-- {{ $_hugo_config := `{ "version": 1 }` }} -->
 
 
-  <!-- {{ $_hugo_config := `{ "version": 1 }` }}
+<div class="partnersdev">
+  <p>
+    TAGLINE
+  </p>
+
+  <h1>
+    Title Area For The Partner Page
+  </h1>
+
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  </p>
+</div>
+
+<img src="/images/logos.jpg">
+
+<!-- <figure>
+  <img src="themes/images/logos.jpg"/>
+</figure> -->
 
 
- -->
-<section class="partners">
 <div class="inner">
 {{ .Inner }}
 </div>
@@ -17,28 +33,19 @@
 <span>{{ . }}</span>
 </h3>
 
-
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/bG5WemQ"><a href="//imgur.com/a/bG5WemQ"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-
-<div>
-  <h1>Partner Title</h1>
-  <p>
-    lorem ipsum dolor set amet
-  </p>
-</div>
-
 <!-- <ul>
 	{{ $partners := where $site.AllPages "Params.category" . }}
 {{ range sort $partners ".Params.order" "asc" }}
 <li>{{ partial "partner.html" . }}</li>
 {{ end }}
 </ul> -->
-
-<section>
-  <p>hello</p>
-</section>
+<div>
+  <h1>Partner Title</h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+  </p>
+</div>
 
 </section>
 {{ end }}
 </section>
-</div>

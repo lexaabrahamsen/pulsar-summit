@@ -1,26 +1,26 @@
 @charset "UTF-8";
 :root {
-  --primary: #303F9F;
+  --primary: #303f9f;
   --primary-txt: #fff;
   --accent: grey;
   --accent-txt: #fff;
-  --base: #FFF;
+  --base: #fff;
   --base-text: #212121;
   --base-secondary-text: #757575;
   --link-secondary-text: #212121;
-  --darken-1: rgba(0, 0, 0, .125);
-  --darken-2: rgba(0, 0, 0, .25);
-  --darken-3: rgba(0, 0, 0, .5);
-  --lighten-1: hsla(0, 100%, 100%, .125);
-  --lighten-2: hsla(0, 100%, 100%, .25);
-  --lighten-3: hsla(0, 100%, 100%, .5);
+  --darken-1: rgba(0, 0, 0, 0.125);
+  --darken-2: rgba(0, 0, 0, 0.25);
+  --darken-3: rgba(0, 0, 0, 0.5);
+  --lighten-1: hsla(0, 100%, 100%, 0.125);
+  --lighten-2: hsla(0, 100%, 100%, 0.25);
+  --lighten-3: hsla(0, 100%, 100%, 0.5);
   --color-hero: ghostwhite;
   --color-platium: #73737a;
   --color-gold: #b7935b;
   --color-error: firebrick;
-  --space-1: .125rem;
-  --space-2: .25rem;
-  --space-3: .5rem;
+  --space-1: 0.125rem;
+  --space-2: 0.25rem;
+  --space-3: 0.5rem;
   --space-4: 1rem;
   --theJdrSize: 1100px;
   --block-text-max-width: 60rem;
@@ -31,7 +31,7 @@
   --container-margin: 10vw;
   --container-margin-mobile: 3vw;
   --toolbar-height: 3.25rem;
-  --font-family: 'Roboto', sans-serif;
+  --font-family: "Lato", sans-serif;
   /* Tags */
   /*from https://github.com/d3/d3-scale-chromatic#schemePastel2*/
   --tag1: #b3e2cd;
@@ -65,7 +65,8 @@
   --extruded-dark: 1px 0 0 var(--darken-3);
   --extruded-light: 1px 0 0 var(--lighten-3);
   --box-shadow-1: 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 2px 2px 0 rgba(0, 0, 0, 0.15);
-  --box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  --box-shadow-2: 0 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   /* Mark */
   --fg-mark-a: white;
   --bg-mark-a: #fb2c17;
@@ -907,18 +908,33 @@ form input {
   margin: 0;
   padding: 4rem; }
   .home main > section h2 {
+    margin-bottom: 1.1rem;
+    padding: 0;
+    font-size: 2rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    text-align: center;
+    color: #2a465b; }
+  .home main > section p {
+    font-size: 1.1rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #355368; }
+  .home main > section h3 {
     margin-bottom: 1.5rem;
     padding: 0;
-    font-size: 3rem;
+    font-size: 0.8rem;
     line-height: 1.875rem;
-    font-weight: 300;
-    text-align: center; }
-  .home main > section p {
-    font-size: 1.5rem; }
+    font-weight: 800;
+    text-align: center;
+    color: #2a465b; }
 
 .home main .info {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: #eef2f6; }
+  .home main .info p {
+    color: 000; }
   .home main .info .wrapper {
     max-width: var(--theJdrSize);
     margin: 0 auto;
@@ -949,9 +965,9 @@ form input {
     font-size: 3.5rem;
     font-weight: 100; }
     .home main .info .number strong::after {
-      content: '';
+      content: "";
       display: block;
-      height: .125rem;
+      height: 0.125rem;
       width: 2rem;
       background-color: var(--primary); }
   .home main .info .number div {
@@ -972,7 +988,7 @@ form input {
   flex-wrap: wrap; }
   .home main .speakers ul li {
     margin: var(--space-4); }
-  .home main .speakers ul li:nth-child(n+5) {
+  .home main .speakers ul li:nth-child(n + 5) {
     display: none; }
 
 .home main .reg .inner {
@@ -1004,7 +1020,7 @@ form input {
   flex-wrap: wrap; }
   .home main .reg ul li {
     margin: var(--space-4); }
-  .home main .reg ul li:nth-child(n+5) {
+  .home main .reg ul li:nth-child(n + 5) {
     display: none; }
 
 .home main .subscribe {

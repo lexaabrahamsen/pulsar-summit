@@ -1,26 +1,44 @@
 .home main {
-
   & > section {
     margin: 0;
     padding: 4rem;
 
     h2 {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.1rem;
       padding: 0;
-      font-size: 3rem;
+      font-size: 2rem;
       line-height: 1.875rem;
-      font-weight: 300;
+      font-weight: 600;
       text-align: center;
+      color: #2a465b;
     }
 
     p {
-      font-size: 1.5rem;
+      font-size: 1.1rem;
+      line-height: 1.3;
+      text-align: center;
+      color: #355368;
+    }
+
+    h3 {
+      margin-bottom: 1.5rem;
+      padding: 0;
+      font-size: 0.8rem;
+      line-height: 1.875rem;
+      font-weight: 800;
+      text-align: center;
+      color: #2a465b;
     }
   }
 
   .info {
     display: flex;
     flex-wrap: wrap;
+    background-color: #eef2f6;
+
+    p {
+      color: 000;
+    }
 
     .wrapper {
       max-width: var(--theJdrSize);
@@ -63,9 +81,9 @@
         font-weight: 100;
 
         &::after {
-          content: '';
+          content: "";
           display: block;
-          height: .125rem;
+          height: 0.125rem;
           width: 2rem;
           background-color: var(--primary);
         }
@@ -98,7 +116,7 @@
       }
 
       // Keep only 4 first speakers
-      li:nth-child(n+5) {
+      li:nth-child(n + 5) {
         display: none;
       }
     }
@@ -142,7 +160,7 @@
       }
 
       // Keep only 4 first speakers
-      li:nth-child(n+5) {
+      li:nth-child(n + 5) {
         display: none;
       }
     }
@@ -232,7 +250,7 @@
   }
 }
 
-@supports (grid-template-columns: repeat(auto-fit,minmax(25vmin,1fr))) {
+@supports (grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr))) {
   .home main .info .numbers {
     justify-content: center;
     display: grid;

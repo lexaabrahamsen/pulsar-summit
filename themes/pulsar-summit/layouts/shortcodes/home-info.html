@@ -1,8 +1,13 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
 <section class="info container {{ .Get "class" }}">
+
 <div class="wrapper">
 	<div class="inner">
+		<h3>TAGLINE</h3>
 		{{ .Inner }}
+		<p>
+			Pulsar Summit is the conference for Apache Pulsar, messaging and event streaming communities. Join core Pulsar committers, new and experienced users, and thought leaders to share experiences and best practices in pub/sub messaging, event streaming, serverless computing, real-time analytics, event-driven applications, and managing mission-critical Pulsar deployments in production.
+			</p>
 	</div>
 
 	{{ with .Get "what" }}

@@ -10,10 +10,6 @@ draft: false
 
 <!-- Parteners list -->
 
-{{% partners categories="partners" %}}
+{{% partners categories="partners,sponsors" %}}
 
 {{% /partners %}}
-
-<!-- {{% partners categories="sponsors" %}}
-
-{{% /partners %}} -->

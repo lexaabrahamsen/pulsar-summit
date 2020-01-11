@@ -1,4 +1,6 @@
 {{ $_hugo_config := `{ "version": 1 }` }}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <section class="info container {{ .Get "class" }}">
 
 <div class="wrapper">
@@ -32,6 +34,17 @@
 			</div>
 	</div>
 
+	<div class="w3-container">
+  <h1>Using Font Awesome Icons</h1>
+
+  <div class="w3-padding w3-xlarge w3-teal">
+    <i class="fa fa-home"></i>
+    <i class="fa fa-search"></i>
+    <i class="fa fa-cloud"></i>
+    <i class="fa fa-trash"></i>
+    Welcome!
+  </div>
+
 	{{ with .Get "what" }}
 	<!--
 	<div class="numbers">
@@ -53,7 +66,8 @@
 <!-- FORM SECTION -->
 <section class="home">
 	<div class="form-reg">
-		<h2>Pulsar Summit San Francisco 2020 Pre-Registration</h2>
+		<h2>Pulsar Summit San Francisco
+		<br />2020 Pre-Registration</h2>
 		<p>
 		Please fill out the form below
 		</p>

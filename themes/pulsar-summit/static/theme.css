@@ -1347,7 +1347,7 @@ form input {
         width: 2ch; }
 
 .partnersdev {
-  padding: 80px;
+  padding: 100px;
   background-color: #f5f9fc; }
   .partnersdev h1 {
     font-size: 35px;
@@ -1365,23 +1365,24 @@ form input {
     line-height: 22px;
     text-align: center; }
 
-.partnerlogos h1 {
-  font-size: 35px;
-  text-align: center;
-  color: #13485f;
-  line-height: 50px; }
-
-.partnerlogos h4 {
-  text-align: center;
-  font-weight: 800;
-  color: #8298ab;
-  line-height: 50px;
-  font-size: 13px; }
-
-.partnerlogos p {
-  color: #1f546c;
-  line-height: 22px;
-  text-align: center; }
+.partnerlogos {
+  column-count: 2;
+  top: 50%;
+  transform: translate(0, -50%); }
+  .partnerlogos h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #13485f;
+    line-height: 50px; }
+  .partnerlogos h4 {
+    text-align: center;
+    font-weight: 800;
+    color: #8298ab;
+    line-height: 50px;
+    font-size: 13px; }
+  .partnerlogos p {
+    color: #1f546c;
+    line-height: 62px; }
 
 .logosquare {
   width: 165px;
@@ -1393,6 +1394,73 @@ form input {
   border-radius: 2px;
   overflow: hidden;
   float: left; }
+
+.partner-text {
+  padding-top: 50px;
+  column-count: 2; }
+  .partner-text h1 {
+    font-size: 35px;
+    text-align: left;
+    color: #13485f;
+    line-height: 50px; }
+  .partner-text h4 {
+    text-align: left;
+    font-weight: 800;
+    color: #8298ab;
+    line-height: 50px;
+    font-size: 13px; }
+  .partner-text p {
+    color: #1f546c;
+    line-height: 22px;
+    text-align: left; }
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue; }
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px; }
+
+article {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 1rem; }
+
+/* Pattern styles */
+.container {
+  display: grid; }
+
+.left-half {
+  background: #ff9e2c;
+  grid-column: 3; }
+
+.right-half {
+  background: #b6701e;
+  grid-column: 2; }
+  .right-half h1 {
+    font-family: "Times New Roman", Times, serif;
+    text-align: left;
+    font-size: 35px;
+    text-align: left;
+    color: #13485f;
+    line-height: 50px; }
+
+* {
+  box-sizing: border-box; }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px; }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table; }
 
 .section.schedule .hero .description {
   display: flex; }

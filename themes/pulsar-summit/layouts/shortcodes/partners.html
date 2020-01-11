@@ -1,35 +1,87 @@
-
-
+<!-- AREA UNDER HERO IMAGE -->
 
 <div class="partnersdev">
   <h4>TAGLINE</h4>
   <h1>Title Area For The Partner Page</h1>
-    <p>
+    <p class="partners-title">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
     </p>
 </div>
+<!--  -->
+
+
+
+<!-- LOGO SQUARES LEFT SIDE  -->
 
 <div class="logosquare">
-  <img src="/images/logo1.jpg">
+  <img src="/images/logo1.png">
+</div>
+<div class="logosquare">
+  <img src="/images/logo2.png">
+</div>
+<div class="logosquare">
+  <img src="/images/logo3.png">
+</div>
+<div class="logosquare">
+  <img src="/images/logo4.png">
+</div>
+<!--  -->
+
+<!-- <div class="row">
+  <div class="column">
+    <img src="/images/logo1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/images/logo2.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/images/logo3.png" alt="Mountains" style="width:100%">
+  </div>
+</div> -->
+
+
+
+<div class=partner-text id="wrapper">
+  <h4>TAGLINE</h4>
+  <h1>Title Area For The Partner Page</h1>
+  <p>
+    When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.
+  </p>
 </div>
 
-<div id="wrapper">
-    <div id="first">Stack Overflow is for professional and enthusiast programmers, people who write code because they love it.</div>
-    <div id="second">When you post a new question, other users will almost immediately see it and try to provide good answers. This often happens in a matter of minutes, so be sure to check back frequently when your question is still new for the best response.</div>
+
+
+<!-- SUBSCRIBE -->
+<div class="partnersdev">
+  <h4>TAGLINE</h4>
+  <h1>Get Updates</h1>
+
+  <section class="subscribe-partners {{ .Get "class" }}">
+  	<div class="inner">{{ .Inner }}</div>
+  	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+  	<script>
+  	hbspt.forms.create({
+  		portalId: "6585952",
+  		formId: "73c1466c-5ee9-411e-8847-d86218438706"
+  	});
+  	</script>
+  	<a href="{{ .Site.Params.subscriptionUrl }}"
+  	   class="btn primary" rel="noreferrer" target="_blank">
+  		{{ partial "icon.html" "subscribe" }}
+  		{{ i18n "subscribe_action" }}
+  	</a>
+  </section>
 </div>
+<!--  -->
 
 
 
-<div class="inner">
-{{ .Inner }}
-</div>
+
 
 {{ $site := .Site }}
 {{ range (split (.Get "categories") ",") }}
 <section class="partners-group partner-{{ . }}">
-<h3 class="fancy">
-<span>{{ . }}</span>
-</h3>
+
 
 </section>
 {{ end }}

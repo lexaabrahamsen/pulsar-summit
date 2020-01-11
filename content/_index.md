@@ -31,6 +31,6 @@ menu:
 
 {{% home-reg %}}
 
-### Pulsar Summit San Francisco 2020 Pre-Registration
+<!-- ### Pulsar Summit San Francisco 2020 Pre-Registration -->
 
 {{% /home-reg %}}

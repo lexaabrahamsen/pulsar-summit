@@ -2,7 +2,10 @@ form {
   display: flex;
   flex-direction: column;
 
-  button, input[type=button], input[type=reset], input[type=submit] {
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
     align-self: flex-end;
   }
 }
@@ -20,8 +23,8 @@ form input {
   border-radius: var(--space-1);
   color: var(--base-text);
 
+  color: var(--darken-3);
   &::placeholder {
-    color: var(--darken-3);
   }
 
   &:focus {

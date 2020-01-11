@@ -948,6 +948,14 @@ form input {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .home main .info .inner .icon-text {
+      padding: 20px;
+      display: inline-block;
+      justify-content: center; }
+      .home main .info .inner .icon-text p {
+        justify-content: center; }
+      .home main .info .inner .icon-text .material-icons {
+        justify-content: right; }
     @media (max-width: 71.24em) {
       .home main .info .inner {
         max-width: 100%; } }

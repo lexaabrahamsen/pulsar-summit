@@ -986,7 +986,8 @@ form input {
     .home main .info .inner .column {
       justify-content: center;
       float: left;
-      width: 25%; }
+      width: 25%;
+      padding-top: 2rem; }
     .home main .info .inner .row:after {
       content: "";
       display: table;
@@ -1103,9 +1104,6 @@ form input {
     .home main .location .description .direction {
       display: flex;
       align-items: center; }
-
-.home main .partners .inner h2 {
-  text-align: center; }
 
 @supports (grid-template-columns: repeat(auto-fit, minmax(25vmin, 1fr))) {
   .home main .info .numbers {

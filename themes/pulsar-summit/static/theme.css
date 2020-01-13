@@ -1377,88 +1377,87 @@ form input {
       .page.partners .jobs ul .job .contact .icon {
         width: 2ch; }
 
-.partnersdev {
-  padding: 100px;
-  background-color: #f5f9fc; }
-  .partnersdev h1 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 35px;
-    text-align: center;
-    color: #13485f;
-    line-height: 50px; }
-  .partnersdev h4 {
-    text-align: center;
-    font-weight: 800;
-    color: #8298ab;
-    line-height: 50px;
-    font-size: 13px; }
-  .partnersdev p {
-    color: #1f546c;
-    line-height: 22px;
-    text-align: center; }
+.partnersdev h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  text-align: center;
+  color: #13485f;
+  line-height: 50px; }
 
-.partnerlogos {
+.partnersdev h4 {
+  text-align: center;
+  font-weight: 800;
+  color: #8298ab;
+  line-height: 50px;
+  font-size: 13px; }
+
+.partnersdev p {
+  color: #1f546c;
+  line-height: 22px;
+  text-align: center; }
+
+.partnersdev .partnerlogos {
   column-count: 2;
   top: 50%;
   transform: translate(0, -50%); }
-  .partnerlogos h1 h1 {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 35px;
-    text-align: center;
-    color: #13485f;
-    line-height: 50px; }
-  .partnerlogos h1 h4 {
-    text-align: center;
-    font-weight: 800;
-    color: #8298ab;
-    line-height: 50px;
-    font-size: 13px; }
-  .partnerlogos h1 p {
-    color: #1f546c;
-    line-height: 62px; }
-  .partnerlogos .logosquare {
-    width: 165px;
-    height: 210px;
-    margin: 30px;
-    padding: 50px 50px 50px 50px;
-    background: #f5f9fc;
-    box-shadow: 0px 2px 30px 0px rgba(48, 70, 89, 0.15);
-    border-radius: 2px;
-    overflow: hidden;
-    float: left; }
-  .partnerlogos .partner-text {
-    padding-top: 50px;
-    column-count: 2; }
-    .partnerlogos .partner-text h1 {
-      font-size: 65px;
-      text-align: left;
-      color: #13485f;
-      line-height: 50px; }
-    .partnerlogos .partner-text h4 {
-      text-align: left;
-      font-weight: 800;
-      color: #8298ab;
-      line-height: 50px;
-      font-size: 13px; }
-    .partnerlogos .partner-text p {
-      color: #1f546c;
-      line-height: 22px;
-      text-align: left; }
-  .partnerlogos .flex-container {
-    display: flex;
-    background-color: DodgerBlue; }
-  .partnerlogos .flex-container > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px; }
-  .partnerlogos .subscribe-partners {
-    padding: 80px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+
+.testbox {
+  width: 165px;
+  height: 210px;
+  margin: 30px;
+  padding: 50px 50px 50px 50px;
+  background: #f5f9fc;
+  box-shadow: 0px 2px 30px 0px rgba(48, 70, 89, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+  float: left; }
+
+.logosquare {
+  width: 165px;
+  height: 210px;
+  margin: 30px;
+  padding: 50px 50px 50px 50px;
+  background: #f5f9fc;
+  box-shadow: 0px 2px 30px 0px rgba(48, 70, 89, 0.15);
+  border-radius: 2px;
+  overflow: hidden;
+  float: left; }
+
+.partner-text h1 {
+  font-size: 65px;
+  text-align: left;
+  color: #13485f;
+  line-height: 50px; }
+
+.partner-text h4 {
+  text-align: left;
+  font-weight: 800;
+  color: #8298ab;
+  line-height: 50px;
+  font-size: 13px; }
+
+.partner-text p {
+  color: #1f546c;
+  line-height: 22px;
+  text-align: left; }
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue; }
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px; }
+
+.subscribe-partners {
+  padding: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .section.schedule .hero .description {
   display: flex; }

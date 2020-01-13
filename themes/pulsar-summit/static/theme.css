@@ -914,11 +914,10 @@ form input {
   .home main > section * {
     box-sizing: border-box; }
   .home main > section .column {
-    float: left;
+    display: inline-block;
+    text-align: center;
     width: 25%;
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */ }
+    padding: 10px; }
   .home main > section .row:after {
     content: "";
     display: table;
@@ -983,9 +982,9 @@ form input {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     /* Clear floats after the columns */ }
     .home main .info .inner .column {
+      justify-content: center;
       float: left;
       width: 25%; }
     .home main .info .inner .row:after {
@@ -993,14 +992,6 @@ form input {
       display: table;
       clear: both;
       justify-content: center; }
-    .home main .info .inner .material-icons {
-      justify-content: center;
-      align-items: center;
-      justify-content: center; }
-    .home main .info .inner .icon-text {
-      display: inline-block; }
-      .home main .info .inner .icon-text p {
-        justify-content: center; }
     @media (max-width: 71.24em) {
       .home main .info .inner {
         max-width: 100%; } }
@@ -1082,25 +1073,6 @@ form input {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-
-.home main .youtube-section {
-  text-align: center; }
-  .home main .youtube-section .inner {
-    max-width: var(--theJdrSize);
-    margin: 0 auto;
-    padding: var(--space-4);
-    border-radius: var(--space-3);
-    position: relative;
-    overflow: hidden;
-    text-shadow: 0 1px 1px var(--darken-3);
-    text-align: center; }
-    .home main .youtube-section .inner .youtube-player {
-      border: 4px solid white;
-      background-color: black; }
-  @media (max-width: 59.99em) {
-    .home main .youtube-section .inner {
-      padding: 0;
-      max-width: 80vw; } }
 
 .home main .tickets {
   display: flex;
@@ -1392,7 +1364,7 @@ form input {
         width: 2ch; }
 
 .partnersdev h1 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Roboto", Times, serif;
   font-size: 35px;
   text-align: center;
   color: #13485f;
